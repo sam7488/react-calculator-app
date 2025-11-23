@@ -1,0 +1,10 @@
+.button {
+    flex: 1 0 calc(33.333% - 10px);
+    height: 60px;
+    font-size: 22px;
+    border: none;
+    border-radius: 8px;
+    background: #444;
+    color: white;
+    cursor: pointer;
+}
