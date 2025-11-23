@@ -1,7 +1,11 @@
 import css from './Display.module.css'
 
-function Display() {
-  return <input type="text" className={css.display}></input>
+function Display({value}) {
+  return <input 
+  className={css.display} 
+  value={value}
+  readOnly
+  ></input>
 }
 
 export default Display;

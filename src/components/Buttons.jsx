@@ -1,12 +1,19 @@
 import css from './Buttons.module.css';
 import Button from './Button';
 
-function Buttons() {
-  const buttonNames = ['C', '1', '2', '+', '3', '4', '-', '5', '6', '*', '7', '8', '/', '=', '9', '0', '.']
+function Buttons({handleClick}) {
+  const buttonNames = [
+    'AC', 'C', '%', '/',
+    '7', '8', '9', '*',
+    '4', '5', '6', '-',
+    '1', '2', '3', '+',
+    '0', '.', '='
+];
+
   return (
     <div className={css.buttons}>
       {buttonNames.map((val) => (
-        <Button key={val} value={val}></Button>
+        <Button key={val} value={val} handleClick={handleClick}></Button>
       ))}
     </div>
   )
